@@ -1,0 +1,141 @@
+
+
+.sp{
+    text-align: center;
+}
+.par {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+img{
+    justify-content: flex-end;
+       height: 680px;     
+       border-top-right-radius: 10%;
+       border-bottom-right-radius: 10%;
+}
+body{
+    background-color: #555;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+  }
+  .logo-section {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+  }
+  .google-button {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+  }
+  
+  .google-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+.line-divider {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    line-height: 0.1em;
+    margin: 15px 0;
+  }
+  
+  .line-divider span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #555;
+  }
+  
+  .signup-form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 300px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group input {
+    width: 3em;
+    height: 1rem;
+    accent-color: blue;
+    margin-right: 5px; /* Add margin between checkbox and label */
+  }
+  
+  .checkbox-group label {
+    margin-left: 0; /* Reset margin to 0 for consistent spacing */
+  }
+  
+ 
+  button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10%;
+  }
+
+.log {
+    text-align: center;
+  }
+  
+  .log a {
+    color: #FFA500; /* Yellow-Orange color */
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold; /* Make the link bold if needed */
+  }
+  
+  .log a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  
