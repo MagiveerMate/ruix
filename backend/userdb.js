@@ -1,35 +1,40 @@
-const sql = require('msnodesqlv8');
+const sql = require('mssql');
 
-const connection = {
+const config = {
+  user: 'Jarred',
   server: 'Jarred-PC',
   database: 'Registration',
-  driver: 'msnodesqlv8',
   options: {
-    trustedConnection: true, // Use Windows authentication
+    encrypt: true, // For Azure users
   },
 };
 
 // Create a connection pool
-const connectionString = `Driver={SQL Server Native Client 11.0};Server=${connection.server};Database=${connection.database};Trusted_Connection=yes;`;
+sql.connect(config)
+  .then(() => {
+    // Define the query to create the users table
+    const query = `
+      IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'users')
+      BEGIN
+        CREATE TABLE users (
+          id INT PRIMARY KEY IDENTITY,
+          name NVARCHAR(255),
+          email NVARCHAR(255),
+          password NVARCHAR(255)
+        )
+      END
+    `;
 
-// Define the query to create the users table
-const query = `
-  IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'users')
-  BEGIN
-    CREATE TABLE users (
-      id INT PRIMARY KEY IDENTITY,
-      name NVARCHAR(255),
-      email NVARCHAR(255),
-      password NVARCHAR(255)
-    )
-  END
-`;
-
-// Execute the query using the connection string
-sql.queryRaw(connectionString, query, (err) => {
-  if (err) {
-    console.error('Error executing query:', err);
-  } else {
+    // Execute the query
+    return new sql.Request().query(query);
+  })
+  .then(() => {
     console.log('Table created or verified successfully');
-  }
-});
+  })
+  .catch((err) => {
+    console.error('Error executing query:', err);
+  })
+  .finally(() => {
+    // Close the connection pool after the query is executed
+    sql.close();
+  });
