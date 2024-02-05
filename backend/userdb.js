@@ -2,7 +2,7 @@ const sql = require('mssql');
 
 const config = {
   user: 'Jarred-PC\Jarred',
-  server: 'Jarred-PC',
+  server: '192.168.1.103',
   database: 'Registration',
   options: {
     encrypt: true, // For Azure users
