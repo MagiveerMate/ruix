@@ -1,8 +1,22 @@
+const os = require('os');
 const sql = require('mssql');
 
+// Find the network interface with a non-internal and non-loopback address
+let ipAddress = '';
+const networkInterfaces = os.networkInterfaces();
+Object.keys(networkInterfaces).some((iface) => {
+  const info = networkInterfaces[iface];
+  const externalAddress = info.find((addr) => !addr.internal && addr.family === 'IPv4');
+  if (externalAddress) {
+    ipAddress = externalAddress.address;
+    return true; // Stop iteration once a suitable interface is found
+  }
+  return false;
+});
+
 const config = {
-  user: 'Jarred-PC\Jarred',
-  server: '192.168.1.103',
+  user: 'Jarred',
+  server: ipAddress,
   database: 'Registration',
   options: {
     encrypt: true, // For Azure users
