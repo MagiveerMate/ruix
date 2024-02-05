@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const userRoutes = require('./routes/userRoutes.js');
-const createDatabase = require('../backend/routes/userdb.js');
+const createDatabase = require('./userdb.js');
 
 const app = express();
 const port = 3001;
