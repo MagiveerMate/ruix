@@ -52,7 +52,7 @@ const SignUpPage = ({ onSuccessfulRegistration }) => {
     <div className="signup-container">
       <form className="signup-form" onSubmit={handleSubmit}>
         <div className="logo-section">
-        <img alt='logo'/>
+        <img alt='         '/>
         </div>
         <div>
           <h2 className='sp'>SIGN UP</h2>
@@ -88,7 +88,7 @@ const SignUpPage = ({ onSuccessfulRegistration }) => {
         </p>
       </form>
       <div className='side-img'>
-      <img alt='img'/>
+      <img alt='         '/>
       </div>
     </div>
   );
