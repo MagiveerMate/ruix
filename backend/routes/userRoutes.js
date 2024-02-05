@@ -12,6 +12,12 @@ router.post('/login', (req, res) => {
   res.json({ message: 'User logged in successfully' });
 });
 
+// Add a new GET route
+router.get('/profile', (req, res) => {
+  // Logic to retrieve user profile
+  res.json({ message: 'User profile retrieved successfully' });
+});
+
 // Add more routes as needed
 
 module.exports = router;
