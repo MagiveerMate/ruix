@@ -1,24 +1,21 @@
 const express = require('express');
 const router = express.Router();
 
+// Sample data for demonstration purposes
+const users = [
+  { id: 1, username: 'user1', email: 'user1@example.com' },
+  { id: 2, username: 'user2', email: 'user2@example.com' },
+  // Add more users as needed
+];
+
 // Define user-related routes
 router.post('/register', (req, res) => {
-  // Access data from the request body
-  const { username, email, password } = req.body;
-
   // Logic to handle user registration
-  // Use the received data (username, email, password) for registration
-
   res.json({ message: 'User registered successfully' });
 });
 
 router.post('/login', (req, res) => {
-  // Access data from the request body
-  const { email, password } = req.body;
-
   // Logic to handle user login
-  // Use the received data (email, password) for login
-
   res.json({ message: 'User logged in successfully' });
 });
 
@@ -30,6 +27,12 @@ router.get('/profile', (req, res) => {
   // Adjust the logic based on your requirements
 
   res.json({ message: 'User profile retrieved successfully', userId });
+});
+
+// Route to get all users
+router.get('/users', (req, res) => {
+  // Logic to retrieve all users
+  res.json({ users });
 });
 
 // Add more routes as needed
