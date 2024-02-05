@@ -32,6 +32,7 @@ body{
   height: 685px;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
+  width: 550px; 
   }
   .logo-section {
     text-align: left;
