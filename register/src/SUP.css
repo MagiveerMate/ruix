@@ -23,20 +23,29 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('free-photo-black-grunge-abstract-background-pattern-wallpaper.png');
+    
     
 
+  }
+  .side-img{
+    background-image: url('free-photo-black-grunge-abstract-background-pattern-wallpaper.png'); 
+  height: 685px;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
   }
   .logo-section {
     text-align: left;
     margin-bottom: 20px;
-    background-image: url('Group18.png') ;
+    
+      width: 100px; /* Adjust the width as needed */
+      height: 30px;
+      background-image: url('Group18.png') ;
+  
+      background-size: cover; /* Adjust to your needs */
   }
   
-  .logo {
-    width: 100px; /* Adjust the width as needed */
-    height: auto;
-  }
+  
+  
   .google-button {
     background-color: #fff;
     color: rgb(0, 0, 0);
