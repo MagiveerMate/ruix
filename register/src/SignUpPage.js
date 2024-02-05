@@ -52,7 +52,7 @@ const SignUpPage = ({ onSuccessfulRegistration }) => {
     <div className="signup-container">
       <form className="signup-form" onSubmit={handleSubmit}>
         <div className="logo-section">
-          <img src="Group18.png" alt="Logo" className="logo" />
+        <img src={process.env.PUBLIC_URL + '/Group18.png'} alt="Logo" className="logo" />
         </div>
         <div>
           <h2 className='sp'>SIGN UP</h2>
@@ -87,7 +87,7 @@ const SignUpPage = ({ onSuccessfulRegistration }) => {
           Already have an account? <a href="/login">Log in</a>
         </p>
       </form>
-      <img src="free-photo-black-grunge-background-pattern-wallpaper.png" alt="contact " />
+      <img src={process.env.PUBLIC_URL + '/free-photo-black-grunge-background-pattern-wallpaper.png'} alt="Contact" />
     </div>
   );
 };
