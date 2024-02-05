@@ -52,7 +52,7 @@ const SignUpPage = ({ onSuccessfulRegistration }) => {
     <div className="signup-container">
       <form className="signup-form" onSubmit={handleSubmit}>
         <div className="logo-section">
-          <img src="https://s3-alpha-sig.figma.com/img/4c00/f65c/117e173de0e27b429d13005853bff085?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IXiZZOUhZz0we2foQFiUshr~dtEjv0maUaS2tW-xNRFLZ8K-6HlLho912bpF3Ld002HTtbVQFCe9jNse81djCf~NTQ3MqDKIIluv67RatLrLBtEwERTaXGrMYSXEelHNPxYOqoUKP5256rtkdlWGPfcUq7QyVI7kp4D8t2GsHCaezkgdvgPCghtzwrNWb0qkEQX8xJApb-ldlL5wMiKM271YXAOKsmiKIG9KbM3GbqepWq1CIa9PUdfj1-~0~Sv~12OwRHMaw9coKy3FCMPxZyTp6KEuEEyacir4GG5gFMhGDFf6ri90gluKMdFHQ5tV7cFZ9KolrDTbnanzErCMxg__" alt="Logo" className="logo" />
+          <img src="Group18.png" alt="Logo" className="logo" />
         </div>
         <div>
           <h2 className='sp'>SIGN UP</h2>
@@ -87,7 +87,7 @@ const SignUpPage = ({ onSuccessfulRegistration }) => {
           Already have an account? <a href="/login">Log in</a>
         </p>
       </form>
-      <img src="https://s3-alpha-sig.figma.com/img/1bc7/e2b6/5a26b88d0d4ca203495f3a92d9171247?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EXfqA4tLRHBzyOxImcQ9ZqL5W0hA-iDNMtUIr8vFCUzczjK4XcHEPzRZ60ar7otokGXKpqVrJ03aju1o9wqtSQlnSG3o5U8tooG0l1uaADtTHL6n3U33fiE~42xBWeYd2d6i2Y9DyqFeqFNdCUBtmlQEFTMqTmL8w15aRz8pCACphGKU1y9Kk6mpyklYNLtBvla2C7v265StP~zwkw35TvlV5FptWnwVMTQWLVN8zqah2AZGYTC9L2vhHKNGpYVMVmLY7UinHrUn3XkZDALHvjSDmx0pJgP8KS89qhSIbDKlxq8LH4xLqCBZw1IU1bsjDNmyS3KPTMEtSk0pABVncw__" alt="contact " />
+      <img src="free-photo-black-grunge-background-pattern-wallpaper.png" alt="contact " />
     </div>
   );
 };
