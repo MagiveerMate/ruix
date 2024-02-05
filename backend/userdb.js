@@ -1,7 +1,7 @@
 const sql = require('mssql');
 
 const config = {
-  user: 'Jarred',
+  user: 'Jarred-PC\Jarred',
   server: 'Jarred-PC',
   database: 'Registration',
   options: {
